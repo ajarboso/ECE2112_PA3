@@ -34,9 +34,12 @@ file_1.close()
 ```
 
 
-- Loading the CSV File: The code uses pd.read_csv() to load the contents of cars.csv into a DataFrame named cars.
+For Question A: The code uses pd.read_csv() to load the contents of cars.csv into a DataFrame named cars.
+```cars = pd.read_csv('cars.csv')```
 
 - Displaying First 5 Rows: The method **cars.head()** is used to display the first 5 rows of the DataFrame.
+
+```print("First Five\n",cars.head())```
 
   Output:
   
@@ -46,6 +49,8 @@ Frist Five:
 
 
 - Displaying Last 5 Rows: Similarly, **cars.tail()** is used to show the last 5 rows of the DataFrame.
+
+```print("Last Five\n",cars.tail())```
 
   Last Five:
 
