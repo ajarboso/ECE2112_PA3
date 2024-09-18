@@ -15,20 +15,27 @@ b. Display the first five and last five rows of the resulting cars.
 
 ### Code:
 
-```#Put the codes into the string variable
+```
+#Put the codes into the string variable
 code_problem_1 = """
+
 #import pandas library
 import pandas as pd
+
 #load the .csv file into a data frame named cars
 cars = pd.read_csv('cars.csv')
+
 #print the first five rows of the resulting cars
 print("First Five\n",cars.head())
+
 #print the last five rows of the resulting cars
 print("Last Five\n",cars.tail())
+
 """
 #writing the code block to a python file 
 file_1 = open('PA.3_Arboso.py','w')
 file_1.write(code_problem_1)
+
 #close the file
 file_1.close()
 ```
