@@ -64,9 +64,84 @@ a. Display the first five rows with odd-numbered columns (columns 1, 3, 5, 7...)
 b. Display the row that contains the ‘Model’ of ‘Mazda RX4’.
 c. How many cylinders (‘cyl’) does the car model ‘Camaro Z28’ have?
 
-d. Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4
+d. Determine how many cylinders (‘cyl’) and what gear type (‘gear’) do the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
 
-Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
+Code:
+
+```
+#Put the codes into string variable
+code_problem_2 = """
+
+#import pandas library
+import pandas as np
+
+#load the .csv file into dataframe named cars
+cars = pd.read_csv('cars.csv')
+
+#print selected rows and column
+print("A.\n",cars.iloc[0:5:1,1::2])
+
+#prints all the rows the the Model is "Mazda RX4"
+print("B.\n",cars.loc[cars['Model']=='Mazda RX4'])
+
+#prints the cyl coloumn where the model is CamaroZ28
+print("C.\n",cars.loc[(cars['Model']=='Camaro Z28'),['cyl']])
+
+#prints the cyl and gear coloumn for the 3 specific models
+print("D.\n",cars.loc[cars['Model']=='Mazda RX4 Wag',['cyl','gear']])
+print(cars.loc[cars['Model']=='Ford Pantera L',['cyl','gear']])
+print(cars.loc[cars['Model']=='Honda Civic',['cyl','gear']])
+
+"""
+# Writes those code into python file
+file_2 = open('PA.3_Arboso.py','w')
+file_2.write(code_problem_2)
+# Closed the file
+file_2.close()
+```
+
+For Question A: 
+
+```print("A.\n",cars.iloc[0:5:1,1::2])```
+
+Select and print specific rows and columns using .iloc. Here, it extracts a slice of the DataFrame, selecting rows 0 through 5, and columns starting from the second column while skipping every other column so you can get the odd numbers.
+
+Output:
+
+![image](https://github.com/user-attachments/assets/efdcf5b0-9df1-434a-8d26-e8c1c450c0ed)
+
+
+For Questions B-D: These sections use the .loc method to filter the data based on specific conditions in the Model column.
+
+
+B. Retrieves all rows where the car model is Mazda RX4.
+
+![image](https://github.com/user-attachments/assets/6959d8f2-fdb4-46d9-b1e3-0e4dc7e8a2b9)
+
+
+C. Displays only the cyl (number of cylinders) column for the Camaro Z28 model.
+
+![image](https://github.com/user-attachments/assets/a8c3d7f2-9a3e-491f-81cf-c112ef75928f)
+
+
+D. Displays both the cyl and gear columns for car models such as Mazda RX4 Wag, Ford Pantera L, and Honda Civic
+
+```print("D.\n",cars.loc[cars['Model']=='Mazda RX4 Wag',['cyl','gear']])```
+
+![image](https://github.com/user-attachments/assets/2030a971-3073-4619-8860-ce6301e73d9e)
+
+```print(cars.loc[cars['Model']=='Ford Pantera L',['cyl','gear']])```
+
+![image](https://github.com/user-attachments/assets/fa260115-6efe-4501-8cdf-003e96ee88ac)
+
+print(cars.loc[cars['Model']=='Honda Civic',['cyl','gear']])```
+
+![image](https://github.com/user-attachments/assets/0fcb7b0f-42b2-49c8-bac4-482e9e518c19)
+
+
+
+
+
 
 
 
