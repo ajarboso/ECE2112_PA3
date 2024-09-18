@@ -30,7 +30,8 @@ print("Last Five\n",cars.tail())
 file_1 = open('PA.3_Arboso.py','w')
 file_1.write(code_problem_1)
 #close the file
-file_1.close()```
+file_1.close()
+```
 
 
 - Loading the CSV File: The code uses pd.read_csv() to load the contents of cars.csv into a DataFrame named cars.
