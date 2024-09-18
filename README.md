@@ -1,8 +1,8 @@
 # ECE2112_PA3
 # II. Instructions:
 
-### For this programming assignment, download the following file and save to your default user folder:
-http://bit.ly/Cars_file
+### For this programming assignment, download the following file and save to your default user folder: http://bit.ly/Cars_file
+
 ![image](https://github.com/user-attachments/assets/c8b74db9-dc8c-49b4-a02b-c74b223215ba)
 
 - Put the file the same folder as the Pa3
@@ -14,10 +14,9 @@ a. Load the corresponding .csv file into a data frame named cars using pandas
 b. Display the first five and last five rows of the resulting cars.
 
 ### Code:
-
+'''
 #Put the codes into the string variable
 code_problem_1 = """
-
 #import pandas library
 import pandas as pd
 #load the .csv file into a data frame named cars
@@ -32,9 +31,27 @@ file_1 = open('PA.3_Arboso.py','w')
 file_1.write(code_problem_1)
 #close the file
 file_1.close()
+'''
+
+- Loading the CSV File: The code uses pd.read_csv() to load the contents of cars.csv into a DataFrame named cars.
+
+- Displaying First 5 Rows: The method **cars.head()** is used to display the first 5 rows of the DataFrame.
+
+  Output:
+  
+Frist Five:
+
+![image](https://github.com/user-attachments/assets/2c511943-b153-4c73-82f9-c1ea5ef2576d)
 
 
+- Displaying Last 5 Rows: Similarly, **cars.tail()** is used to show the last 5 rows of the DataFrame.
 
+  Last Five:
+
+  ![image](https://github.com/user-attachments/assets/6431e9a6-8690-4503-89cd-4427abc28005)
+
+
+  
 
 
 ## PROBLEM 2: Save your file as Surname_Pandas-P2.py
