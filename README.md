@@ -14,8 +14,8 @@ a. Load the corresponding .csv file into a data frame named cars using pandas
 b. Display the first five and last five rows of the resulting cars.
 
 ### Code:
-'''
-#Put the codes into the string variable
+
+'''#Put the codes into the string variable
 code_problem_1 = """
 #import pandas library
 import pandas as pd
@@ -30,8 +30,8 @@ print("Last Five\n",cars.tail())
 file_1 = open('PA.3_Arboso.py','w')
 file_1.write(code_problem_1)
 #close the file
-file_1.close()
-'''
+file_1.close()'''
+
 
 - Loading the CSV File: The code uses pd.read_csv() to load the contents of cars.csv into a DataFrame named cars.
 
