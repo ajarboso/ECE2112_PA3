@@ -134,7 +134,7 @@ D. Displays both the cyl and gear columns for car models such as Mazda RX4 Wag, 
 
 ![image](https://github.com/user-attachments/assets/fa260115-6efe-4501-8cdf-003e96ee88ac)
 
-print(cars.loc[cars['Model']=='Honda Civic',['cyl','gear']])```
+```print(cars.loc[cars['Model']=='Honda Civic',['cyl','gear']])```
 
 ![image](https://github.com/user-attachments/assets/0fcb7b0f-42b2-49c8-bac4-482e9e518c19)
 
